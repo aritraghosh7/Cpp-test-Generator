@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+project(CPPTestGenerator)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Add GoogleTest from third_party
+add_subdirectory(third_party/googletest)
+include_directories(third_party/googletest/googletest/include)
+
+# Change executable name to avoid WinMain issue
+add_executable(app WIN32 main.cpp)
+set_target_properties(app PROPERTIES
+    LINK_FLAGS "-Wl,--subsystem,console"
+)
+
+# Unit test executable
+add_executable(runTests test/test_main.cpp)
+target_link_libraries(runTests gtest gtest_main)

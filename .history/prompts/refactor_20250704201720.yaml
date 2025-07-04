@@ -1,0 +1,8 @@
+task: refactor
+instructions:
+  - Refactor the C++ code to improve testability.
+  - Extract complex logic into pure functions or classes.
+  - Remove any I/O logic from core logic (separate UI from computation).
+  - Avoid global variables.
+  - Ensure modular and clean structure.
+  - Maintain full functionality after refactoring.

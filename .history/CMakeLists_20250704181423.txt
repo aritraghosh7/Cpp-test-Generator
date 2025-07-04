@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+project(CPPTestGenerator)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Tell Windows you're building a CONSOLE app (not GUI)
+set(CMAKE_EXE_LINKER_FLAGS "-Wl,--subsystem,console")
+
+# Add GoogleTest from third_party
+add_subdirectory(third_party/googletest)
+include_directories(third_party/googletest/googletest/include)
+
+# Main executable
+add_executable(main main.cpp)
+
+# Unit test executable
+add_executable(runTests test/test_main.cpp)
+target_link_libraries(runTests gtest gtest_main)

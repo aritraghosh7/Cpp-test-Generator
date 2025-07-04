@@ -1,0 +1,9 @@
+# Ignore build outputs and binaries
+/build/
+/*.exe
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+*.obj
+*.o

@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+project(CPPTestGenerator)
+set(CMAKE_CXX_STANDARD 17)
+
+# Google Test setup
+add_subdirectory(third_party/googletest)
+include_directories(third_party/googletest/googletest/include)
+
+# App (optional)
+add_executable(my_console_app main.cpp)
+
+# Unit test target
+add_executable(runTests test/test_main.cpp)
+target_link_libraries(runTests gtest gtest_main)

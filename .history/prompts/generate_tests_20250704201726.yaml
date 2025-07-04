@@ -1,0 +1,8 @@
+task: generate_unit_tests
+instructions:
+  - Generate Google Test (GTest)-based unit tests for all public functions.
+  - Include necessary headers like <gtest/gtest.h>.
+  - Use TEST or TEST_F macros where applicable.
+  - Avoid duplicate test cases.
+  - Include edge cases and exception handling.
+  - Name test cases clearly using the pattern: FunctionName_Condition_ExpectedBehavior.

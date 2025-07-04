@@ -1,0 +1,7 @@
+task: fix_build_errors
+instructions:
+  - Analyze the provided build errors and logs.
+  - Fix missing includes, incorrect function calls, or signature mismatches.
+  - Modify only the test file if possible.
+  - Ensure successful compilation and test execution.
+  - Avoid unnecessary code changes.
