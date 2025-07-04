@@ -20,18 +20,18 @@ This project implements a **unit test generator tool for C++ applications** usin
 <pre>
 cpp-test-generator/
 ├── main.cpp # Application entry point
-├── math_utils.cpp / .h # C++ functions under test
-├── string_utils.cpp / .h # Utility functions
+├── math_utils.cpp / .h              # C++ functions under test
+├── string_utils.cpp / .h            # Utility functions
 ├── test/
-│ └── test_main.cpp # Google Test unit tests
+│ └── test_main.cpp                  # Google Test unit tests
 ├── prompts/
-│ ├── generate_tests.yaml # AI test generation prompt
-│ ├── refactor.yaml # AI test refinement prompt
-│ └── fix_issues.yaml # AI bug-fix prompt
+│ ├── generate_tests.yaml            # AI test generation prompt
+│ ├── refactor.yaml                  # AI test refinement prompt
+│ └── fix_issues.yaml                # AI bug-fix prompt
 ├── third_party/
-│ └── googletest/ # Google Test submodule
-├── CMakeLists.txt # CMake build configuration
-└── README.md # Project documentation
+│ └── googletest/                    # Google Test submodule
+├── CMakeLists.txt                   # CMake build configuration
+└── README.md                        # Project documentation
 </pre>
 
 ---
